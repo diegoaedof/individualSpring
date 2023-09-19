@@ -6,7 +6,8 @@ import java.util.List;
 
 public interface IAlumnoService {
     public Alumno crearAlumno(Alumno alumnoACrear);
-    public Alumno actualizarAlumno(int id);
     public List<Alumno> listarAlumno();
+    public Alumno buscarAlumnoId(int id);
+    public Alumno actualizarAlumno(Alumno alumnoNuevo);
     public void eliminarAlumno(int id);
 }
